@@ -22,7 +22,7 @@ const App = () => {
         navigate("/login");
       }
     });
-  }, []);
+  }, [navigate]); // Added navigate to dependency array
 
   return (
     <div>

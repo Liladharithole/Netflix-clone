@@ -16,12 +16,17 @@ const Login = () => {
   const user_auth = async (event) => {
     event.preventDefault();
     setLoading(true);
-    if (signState === "Sign In") {
-      await login(email, password);
-    } else {
-      await signup(name, email, password);
+    try {
+      if (signState === "Sign In") {
+        await login(email, password);
+      } else {
+        await signup(name, email, password);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return loading ? (

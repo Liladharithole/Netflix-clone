@@ -51,7 +51,7 @@ const login = async (email, password) => {
     toast.success("Login successful!");
   } catch (error) {
     console.log(error);
-    if (error.code === 'auth/wrong-password' || error.code === 'auth/invalid-email') {
+    if (error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found') {
       toast.error("Invalid credentials.");
     } else {
       toast.error(error.message); // Display the real error message
