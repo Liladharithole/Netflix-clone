@@ -32,7 +32,7 @@ This project is a Netflix clone built using ReactJS. It mimics the basic functio
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Netflix-clone.git
+   git clone https://github.com/Liladharithole/Netflix-clone.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -93,3 +93,7 @@ This project is licensed under the MIT License.
 ## Acknowledgements
 
 This project was created with the help of various AI tools, browser resources, and YouTube tutorials.
+
+## Note
+
+Currently, the project is optimized for desktop and laptop screens. Plans are in place to make it more responsive for mobile screens in the future.
