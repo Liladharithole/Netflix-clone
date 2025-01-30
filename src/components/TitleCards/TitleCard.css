@@ -23,4 +23,9 @@
   position: relative;
 }
 
+.card-list .card p{
+    text-decoration: none;
+    color: white;
+}
+
 
